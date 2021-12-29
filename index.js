@@ -7,6 +7,7 @@
  *
  * Steps:
  * 1. (100 points) Create a class Card that takes 2 properties `number`, and `color`
+ *
  * 2. (100 points) Create the constructor inside the class `Card` that initializes color and number
  * 3. (100 points) after creating the class, create 4 objects from the class Card for Green, Blue, Red, and Yellow cards, give them any numbers.
  * 4. (50 points) console.log every single object.
@@ -30,9 +31,39 @@
  */
 let cards = []; // You will use this array in step 6
 
-// Continue the code here 👇🏻
+class Card {
+  constructor(number, color) {
+    this.number = number;
+    this.color = color;
+  }
+  image = () => `./images/${this.color}_${this.number}.png`;
+}
 
+// Listing for each color calling function with color param
+
+listForColor = (color) => {
+  for (let i = 0; i < 10; i++) {
+    cards.push(new Card(i, color));
+  }
+};
+
+// const firstCard = new Card(5, "Green");
+// const secondCard = new Card(4, "Red");
+// const thirdCard = new Card(3, "Blue");
+// const fourthCard = new Card(2, "Yellow");
+
+listForColor("Green");
+listForColor("Red");
+listForColor("Blue");
+listForColor("Yellow");
+
+// Continue the code here 👇🏻
+// cards.push(firstCard);
+// cards.push(secondCard);
+// cards.push(thirdCard);
+// cards.push(fourthCard);
 /**
+ *
  *
  * Don't touch this code
  * This function is going to render the cards array to the HTML page,
