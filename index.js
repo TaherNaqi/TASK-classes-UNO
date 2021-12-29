@@ -29,6 +29,8 @@
  *      you need to use loops and fill the cards deck in a loop (Hint: You should use `for` loops, )
  *
  */
+// Continue the code here 👇🏻
+
 let cards = []; // You will use this array in step 6
 
 class Card {
@@ -57,7 +59,6 @@ listForColor("Red");
 listForColor("Blue");
 listForColor("Yellow");
 
-// Continue the code here 👇🏻
 // cards.push(firstCard);
 // cards.push(secondCard);
 // cards.push(thirdCard);
