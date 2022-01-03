@@ -45,7 +45,9 @@ class Card {
 
 listForColor = (color) => {
   for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 2; j++) cards.push(new Card(i, color));
+    for (let j = 0; j < 2; j++) {
+      cards.push(new Card(i, color));
+    }
   }
 };
 
